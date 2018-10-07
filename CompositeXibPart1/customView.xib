@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="customView">
+            <connections>
+                <outlet property="contentView" destination="SB2-IP-oG5" id="fmv-Vz-VvQ"/>
+                <outlet property="myscrollview" destination="5m9-Xo-raN" id="gMw-OD-4EA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="EjG-L7-qZw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m9-Xo-raN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-IP-oG5" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z2-pj-8Qj">
+                                    <rect key="frame" x="0.0" y="21" width="320" height="122"/>
+                                    <string key="text">This view contains a label inside a scrollview and contains constraints on every edge of the scrollview and constraints on every edge of the textview also. The label will not word wrap properly with constraints!!</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6Z2-pj-8Qj" firstAttribute="top" secondItem="SB2-IP-oG5" secondAttribute="top" constant="21" id="3P0-0c-xHl"/>
+                                <constraint firstAttribute="trailing" secondItem="6Z2-pj-8Qj" secondAttribute="trailing" id="FuS-Ua-a3m"/>
+                                <constraint firstItem="6Z2-pj-8Qj" firstAttribute="leading" secondItem="SB2-IP-oG5" secondAttribute="leading" id="gwM-Nu-psx"/>
+                                <constraint firstAttribute="height" constant="800" id="vEQ-zE-cYh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SB2-IP-oG5" secondAttribute="bottom" id="0v5-8K-uPp"/>
+                        <constraint firstItem="SB2-IP-oG5" firstAttribute="leading" secondItem="5m9-Xo-raN" secondAttribute="leading" id="17F-zo-44J"/>
+                        <constraint firstItem="SB2-IP-oG5" firstAttribute="top" secondItem="5m9-Xo-raN" secondAttribute="top" id="YFQ-bz-eKI"/>
+                        <constraint firstAttribute="trailing" secondItem="SB2-IP-oG5" secondAttribute="trailing" id="es9-hF-lfc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="SB2-IP-oG5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6Ap-gT-6XJ"/>
+                <constraint firstAttribute="trailing" secondItem="5m9-Xo-raN" secondAttribute="trailing" id="9pr-Q0-lcc"/>
+                <constraint firstItem="5m9-Xo-raN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bhw-eu-0QT"/>
+                <constraint firstItem="5m9-Xo-raN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cp9-zY-aW0"/>
+                <constraint firstAttribute="bottom" secondItem="5m9-Xo-raN" secondAttribute="bottom" id="iRk-at-ffK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="161.59999999999999" y="115.14242878560721"/>
+        </view>
+    </objects>
+</document>
