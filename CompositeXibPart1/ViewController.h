@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "customView.h"
 // Forward declaration
 
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *wantToShowHereView;
 
-@property (weak, nonatomic) IBOutlet UIView *myView;
 @end

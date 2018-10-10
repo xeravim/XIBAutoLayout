@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-     customView *customV = [[customView alloc] init];
+     customView *customV = [[customView alloc] initWithFrame:self.wantToShowHereView.bounds];
     [self.wantToShowHereView addSubview:customV];
 
 }
